@@ -19,6 +19,9 @@
     <a href="{{route('update', $movie -> id)}}">
         Update
     </a>
+    <a href="{{route('delete', $movie -> id)}}">
+       Delete
+    </a>
     
 </li>
     
