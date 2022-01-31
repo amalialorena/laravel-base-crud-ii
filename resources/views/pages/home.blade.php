@@ -16,8 +16,8 @@
         {{ $movie -> name }} -
         {{ $movie -> release_date }}
     </a>
-    <a href="{{route('update')}}">
-        update
+    <a href="{{route('update', $movie -> id)}}">
+        Update
     </a>
     
 </li>

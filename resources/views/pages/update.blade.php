@@ -14,17 +14,17 @@
     </div>
 @endif
     
-<form action="{{ route('updated') }}" method="POST">
+<form action="{{ route('updated', $movie -> id) }}" method="POST">
 
     @method("POST")
     @csrf
 
     <label for="name">Title:</label>
-    <input type="text" name="name" placeholder="title" value={{ $movies-> name }} ><br>
+    <input type="text" name="name" placeholder="title" value={{ $movie -> name }} ><br>
     <label for="subtitle">Subtitle:</label>
-    <input type="text" name="subtitle" placeholder="subtitle" value={{ $movies-> subtitle }} ><br>
+    <input type="text" name="subtitle" placeholder="subtitle" value={{ $movie -> subtitle }} ><br>
     <label for="release_date">Release date:</label>
-    <input type="date" name="release_date" value={{ $movies-> release_date }} ><br>
+    <input type="date" name="release_date" value={{ $movie -> release_date }} ><br>
     <input type="submit" value="update">
 </form>
 

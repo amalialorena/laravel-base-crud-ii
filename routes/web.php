@@ -8,5 +8,5 @@ Route::get('/details/show/{id}', 'HomeController@show') -> name ('show');
 Route::get('/create', 'HomeController@create') -> name ('create');
 Route::post('/store', 'HomeController@store') -> name('store');
 
-Route::get('/update', 'HomeController@update') -> name ('update');
+Route::get('/update/{id}', 'HomeController@update') -> name ('update');
 Route::post('/updated/{id}', 'HomeController@updated') -> name ('updated');
